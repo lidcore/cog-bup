@@ -10,6 +10,7 @@ PLATFORMS
 
 DEPENDENCIES
   cog-rb (= 0.4.4)
+  rake (= 11.3.0)
 
 RUBY VERSION
    ruby 2.3.3p222
