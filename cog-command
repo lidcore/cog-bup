@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+Dir.chdir(File.dirname(__FILE__))
+
+libdir = File.join(File.dirname(__FILE__), "lib")
+$LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
+
+begin
+  require_relative "bundle/bundler/setup"
+rescue LoadError
+  require "bundler"
+  Bundler.setup
+end
+
+require "cog"
+
+Cog.bundle("bup")
