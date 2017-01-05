@@ -1,6 +1,6 @@
-FROM alpine:3.4
+FROM ruby:2.3.3-alpine
 
-RUN apk -U add ca-certificates libssh2 ruby ruby-json && \
+RUN apk -U add ca-certificates libssh2 && \
     rm -f /var/cache/apk/*
 
 # Setup bundle user and directory
