@@ -13,3 +13,5 @@ commands:
     executable: "/home/bundle/cog-command"
     description: ping
     arguments: "<panglish>"
+    rules:
+      - allow
