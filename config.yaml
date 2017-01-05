@@ -1,0 +1,15 @@
+---
+cog_bundle_version: 4
+name: bup
+description: cog bundle for managing bundles
+version: 0.0.1
+docker:
+  image: lidcore/cog-bup
+  tag: 0.0.1
+author: LIDCORE IT <it@lidcore.com>
+homepage: https://github.com/lidcore/cog-bup
+commands:
+  ping:
+    executable: "/home/bundle/cog-command"
+    description: ping
+    arguments: "<panglish>"
